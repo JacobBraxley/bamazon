@@ -6,6 +6,9 @@ HW10 - Node.js & MySQL
 
 There are 3 script files that takes on various roles.   The Customer and Manager script files are fully featured.  The Supervisor script is unfinished.
 
+You can find images which show all functions for the first two script files:
+https://github.com/JacobBraxley/bamazon/tree/master/assets/images
+
 ### Prerequisites
 
 A cli that supports es6.
