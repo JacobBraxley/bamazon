@@ -54,7 +54,9 @@ function promptAction() {
     
 }
 function displaySalesByDepartment() {
-    connection.query("SELECT department_id, department_name, SUM(product_sales) FROM products GROUP BY department_name", function(err, res) {
+    let query = "SELECT D.department_id, D.department_name, D.over_head_costs, SUM(P.product_sales) AS product_sales, SUM(P.product_sales)-D.over_head_costs AS total_profit"
+    query += "FROM products P JOIN departments D GROUP BY D.department_name"
+    connection.query(query, function(err, res) {
         if(err) { 
             throw err; 
         } else
@@ -63,10 +65,11 @@ function displaySalesByDepartment() {
     });
     
 }
-//       connection.query("SELECT * FROM top5000 WHERE ?", { song: answer.song }, function(err, res) {
-//       var query = "SELECT top_albums.year, top_albums.album, top_albums.position, top5000.song, top5000.artist ";
-//       query += "FROM top_albums INNER JOIN top5000 ON (top_albums.artist = top5000.artist AND top_albums.year ";
-//       query += "= top5000.year) WHERE (top_albums.artist = ? AND top5000.artist = ?) ORDER BY top_albums.year, top_albums.position";
+//connection.query("SELECT * FROM top5000 WHERE ?", { song: answer.song }, function(err, res) {
+//var query = "SELECT top_albums.year, top_albums.album, top_albums.position, top5000.song, top5000.artist ";
+//query += "FROM top_albums INNER JOIN top5000 ON (top_albums.artist = top5000.artist AND top_albums.year ";
+//query += "= top5000.year) WHERE (top_albums.artist = ? AND top5000.artist = ?) ORDER BY top_albums.year, top_albums.position";
+// | department_id | department_name | over_head_costs | product_sales | total_profit |
 
 function createNewDepartment() {
 
