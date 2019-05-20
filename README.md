@@ -1,10 +1,10 @@
-# Node.js & MySQL
+# Node.js & MySQL - bamazon
 
 HW10 - Node.js & MySQL
 
 ## Getting Started
 
-
+There are 3 script files that takes on various roles.   The Customer and Manager script files are fully featured.  The Supervisor script is unfinished.
 
 ### Prerequisites
 
@@ -12,12 +12,9 @@ A cli that supports es6.
 
 ### Installing
 
-Create your own .env environment which contains the following items:
-   SPOTIFY_ID=#
-   SPOTIFY_SECRET=#
-   IMDB_KEY=#
-
 Run npm install.
+Use databaseSetup.sql to setup the database and associated tables.
+Set process.env.HOST, process.env.PORT, process.env.USER, and process.env.PASS as environment variables for your database.
 
 ## Running the tests
 
@@ -37,17 +34,8 @@ N/A
 
 ## Built With
 
-* [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
+* [Node.js](https://www.nodejs.org/)
 
-* [Axios](https://www.npmjs.com/package/axios)
-
-* [OMDB API](http://www.omdbapi.com)
-
-* [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
-
-* [Moment](https://www.npmjs.com/package/moment)
-
-* [DotEnv](https://www.npmjs.com/package/dotenv)
 
 ## Contributing
 

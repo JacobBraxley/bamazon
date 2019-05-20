@@ -1,15 +1,11 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
-
 const hostName = process.env.HOST || "192.168.99.103";
 const hostPort = process.env.PORT || 3306;
 const hostUser = process.env.USER || "root"
 const userPass = process.env.PASS || "docker";
 const database = "bamazon";
-
-
-let purchaseTotal = 0;
 
 var connection = mysql.createConnection({
   host: hostName,
@@ -58,7 +54,6 @@ function promptAction() {
             displayProductsForSale();
       }
     });
-    
 }
 
 function displayProductsForSale() {
@@ -133,8 +128,6 @@ function addInventory() {
     });    
 }
 
-
-
 function addNewProduct() {
     inquirer.prompt([{
         name: "name",
@@ -158,5 +151,4 @@ function addNewProduct() {
             }
         });
     });
-
 }

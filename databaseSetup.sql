@@ -23,17 +23,17 @@ CREATE TABLE departments (
 INSERT INTO departments (department_name, over_head_costs)
 VALUES
 ("Virtues", 100),
-("Vices", 100)
+("Vices", 100);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES 
 ("Honor", "Virtues", 100.00, 2), 
-("Courage", "Virtues", 3.10, 2), 
-("Compassion", "Virtues", 3.25, 75),
-("Respect", "Virtues", 3.25, 75),
-("Loyalty", "Virtues", 3.25, 75),
-("Lust", "Vices", 3.25, 75),
-("Wrath", "Vices", 3.25, 75),
-("Greed", "Vices", 0.00, 75),
-("Pride", "Vices", 3.25, 75),
-("Spice Food", "Vices", 3.25, 75);
+("Courage", "Virtues", 3.11, 3), 
+("Compassion", "Virtues", 3.25, 100),
+("Respect", "Virtues", 33.23, 1),
+("Loyalty", "Virtues", 23.25, 50),
+("Lust", "Vices", 3.20, 15),
+("Wrath", "Vices", 3.25, 7),
+("Greed", "Vices", 0.00, 200),
+("Pride", "Vices", 30.25, 1),
+("Spicy Food", "Vices", 1.25, 2);

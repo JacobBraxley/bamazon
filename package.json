@@ -1,26 +1,30 @@
 {
-  "name": "liri-bot",
+  "name": "bamazon",
   "version": "1.0.0",
-  "description": "Language Interpretation and Recognition Interface",
-  "main": "script.js",
+  "description": "Bad CLI version of Amazon",
+  "main": "bamazonCustomer.js",
   "scripts": {
-    "test": "node script.js",
+    "test": "node bamazonCustomer.js",
     "start": "node bamazonCustomer.js",
+    "manage": "node bamazonManager.js",
+    "supervise": "node bamazonSupervisor.js",
     "monitor": "nodemon bamazonCustomer.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JacobBraxley/liri-node-app.git"
+    "url": "git+https://github.com/JacobBraxley/bamazon"
   },
   "keywords": [
-    "LIRI"
+    "bamazon",
+    "CLI",
+    "MYSQL"
   ],
   "author": "Jacob Braxley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JacobBraxley/liri-node-app/issues"
+    "url": "https://github.com/JacobBraxley/bamazon/issues"
   },
-  "homepage": "https://github.com/JacobBraxley/liri-node-app#readme",
+  "homepage": "https://github.com/JacobBraxley/bamazon#readme",
   "dependencies": {
     "console.table": "^0.10.0",
     "inquirer": "^6.2.1",
